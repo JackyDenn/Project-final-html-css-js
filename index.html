@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Phone Shop</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+   <main>
+      <!-- responsive menu bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+         <a class="navbar-brand" href="#"><strong>Neth Radenn</strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mx-auto ">
+               <li class="nav-item active"><a class="nav-link text-white h5" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="phones.html"><i class="fa-regular fa-mobile">Phones</i></a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="Accessories.html"><i class="fa-solid fa-headphones"></i>Accessories</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="Register.html"><i class="fa-solid fa-registered"></i>Register</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us</a></li>
+               
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0 ">
+               <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search" aria-label="Search"><i class="fa-brands fa-searchengin"></i>
+            </form>
+            <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+         </div>
+      </nav>
+       <!-- responsive slide  -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+         </div>
+         <div class="carousel-inner">
+            <img src="" class="d-block w-100vw" alt="...">
+           <div class="carousel-item active">
+             <img src="https://t4.ftcdn.net/jpg/07/06/56/43/240_F_706564300_z1VT97kn1czezqWKYiTx9VqwmHrT0kjJ.jpg" height="200px"  class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://arystorephone.com/wp-content/uploads/2024/02/slide-banner-reno11.webp" height="200px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="data:image/jpeg;base64,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" height="200px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://images.mobileshop.eu/1703250362/banner/11671Screenshot_3.jpg" height="200px" class="d-block w-100" alt="...">
+           </div>
+            <div class="carousel-item">
+             <img src="data:image/jpeg;base64,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" height="200px" class="d-block w-100" alt="...">
+           </div>
+          
+           </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- list productts cards -->
+      <section> 
+         <div class="featured-area pt-3 pb-70">
+            <div class="container">
+               <h1 class="text-center text-capitalize"><font color="Red">List of Mobile Phone Products</font></h1>
+               <div class="tab featured-tab-area">
+                  <div class="tab_content current active pt-3"> 
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           
+                           <!-- List of Apple phone -->
+                        
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/11_ZP.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Apple-Iphone11</a></h3>
+                                    <p align="justify">
+                                       Model: ZP (SIM1+E-SIM)<br>
+                                       64G= $555 Offer $449<br>
+                                       128G= $595 Offer $485<br>
+                                       64G=738$ Offer $459<br>
+                                       128G=938$ Offer $495<br>
+                                       Promotion:<br>
+                                       Store Warranty 1 Year <br>
+                                       Free case<br>
+                                       Free Screen<br>
+                                       Free Mini-Speaker<br>
+                                        </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 449 </h4>
+                                       <span>(4.5)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Apple-Iphone11" data-price="449" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                              <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/13mini_Red.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone13Mini</a></h3>
+                                    <p align="justify">Promotion Offer!<br>
+                                        128G= 789$ Sell@ $689<br>
+                                        256G= 9895 Sell@ $739<br>
+                                        Promotion:<br> 
+                                        Free Case<br>
+                                        Free Screen<br> 
+                                        Free Adaptor 20W<br>
+                                        Free Other Accessories<br>
+                                        Free Other Installing Software<br>
+                                        Store Warranty 1Year
+                                        </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 689 </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone13Mini" data-price="689" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/Ip13-Pro-MAX_v5.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone13-Pro-Max</a></h3>
+                                    <p align="justify">13 Pro Max (USA No Active)<br>
+                                        128G: $859 (No Box)<br>
+                                        256G: $939 (No Box)<br>
+                                        512G: $999 (No Box)<br>
+                                        1T: $1039 (No Box)<br>
+                                        Free Jelly Case<br>
+                                        Free Temper Glass<br>
+                                        Free Adaptor 20W<br>
+                                        Apple Store Warranty 1 Year<br>
+                                        Free Other Accessories
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 859 </h4>
+                                       <span>(4.7)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                    <button type="button" data-name="Ip13-Pro-Max" data-price="859" class="default-btn border-radius-5">Add to cart</button>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/Iphone-14pm-LL_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone-14pm</a></h3>
+                                    <p align="justify">14 Pro Max USA (No Sim Slot)
+                                        USA (2 E-SIM) ✔️<br> No Active ✔️<br>
+                                        128G: 1299 Offer $1,049<br>
+                                        256G: 1399 Offer $1,099 <br>
+                                        512G: 1499 Offer $1,289<br>
+                                        1T:  1699 Offer $1,389<br>
+                                        Free Case<br>
+                                        Free Screen<br> 
+                                        Free Adaptor 20W<br>
+                                    </p>
+
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1,049 </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone-14pm-ll_v1" data-price="1049" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/Zp-14_v45.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">iPhone-14-ZP/A </a></h3>
+                                    <p align="justify" style="font-size:10px">Iphone 14
+                                        Warranty 1 Year by Falcon<br>
+                                        Code: ZP/A (SIM1+ESim)<br>
+                                        128G: 839$ Offer $689<br>
+                                        256G: 1,159$ Offer $799<br>
+                                        512G: 1,389$ (Call Us)<br>
+                                        Special  Offer: <br>
+                                        Free Adaptor 20W<br>
+                                        Free Case 
+                                        Free Screen</p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 689 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone-14-ZP/A" data-price="689" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/15-Pro-USA.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone15-Pro-Max </a></h3>
+                                    <p align="justify" style="font-size:10px">15 Pro Max 2-SIMs (ZA or CH)<br>
+                                        Blue 256G  $1,279<br>
+                                        Black 256G  $1,299<br>
+                                        White 256G $1,309<br>
+                                        Nature 256G  $1,309<br>
+                                        Blue 512G: $1,489<br>
+                                        Black 512G: $1,489<br>
+                                        Natur/Whi  512G: $1,499<br>
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$1,279  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone15-Pro-Max" data-price="1279" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                           <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/iphone-15-Plus-SIM2_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone-15-Plus</a></h3>
+                                    <p align="justify" style="font-size:10px">15 Plus SIM2 (CH/A)
+                                       128G: 1,149$ Offer $889<BR>
+                                       128G Pink 899<BR>
+                                       256G  1,249$, Offer $1019<BR>
+                                       256G Pink 1,099<BR>
+                                       512G: 1,439$ (Call Us)<BR>
+                                       Apple Store Warranty 1 Year<BR>
+                                       Store warranty 1year
+                                       </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 889 </h4>
+                                       <span>(4.7)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone-15-Plus" data-price="889" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Apple/iphone-15-SIM2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Iphone-15Pro-Sim2</a></h3>
+                                    <p align="justify" style="font-size:10px">15 Pro SIM2 (ZA/A or CH/A)
+                                       Blue 128G 1,089$<br>
+                                       Other Colors: 128G: 1,099$<br>
+                                       Blue 256G 1,189$<br>
+                                       Other Colors 256G: 1,199$<br>
+                                       All Colors 512G: 1,459$<br>
+                                       1T: Call US<br>
+                                       Store warranty 1year
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$1,089  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Iphone15pro" data-price="1089" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                            <!-- List of Huawei phone -->
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Hono-50-lite.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Hono-50-lite</a></h3>
+                                    <p align="justify">Promotion Gift: Playstore Available <br>
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Honor Bag<br>
+                                       Free Bluetooth<br>
+                                       Color: Blue, Black, Silver<br>
+                                       Screen Size: 6.67 inches<br>
+                                       RAM8G|ROM128G<br>
+                                       Camara Quad: 
+                                       64 MP, f/1.9, 26mm (wide), 1/1.7″, PDAF
+                                       8 MP, f/2.4, 120˚, 17mm (ultrawide)
+                                       2 MP, f/2.4, (macro)
+                                       2 MP, f/2.4, (depth)
+                                       </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$289</h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Hono-50" data-price="289" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-mateXs3_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-matexs3</a></h3>
+                                    <p align="justify">Promotion Mate X3
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Original Flip Cover<BR>
+                                       Screen Size: 7.85 inches, 197.5 cm2 (~88.9% screen-to-body ratio)<BR>
+                                       Display Type: Foldable OLED, 1B colors, 120Hz<BR>
+                                       Unfolded: 156.9 x 141.5 x 5.3 mm<BR>
+                                       Folded: 156.9 x 72.4 x 11.8 mm<BR>
+                                       Storage: 512GB+12GB RAM<BR>
+                                       Store Warranty 1year<br>
+                                       Free Other Accessories
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$1,869  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="" data-price="1869" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Nova-10SE.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Nova-10SE</a></h3>
+                                    <p align="justify">Promotion Gift:<br> 
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Huawei Bage<br>
+                                       Color: Black, Blue, Silver<br>
+                                       Screen Size: 6.67 inches<br>
+                                       RAM8G|ROM128<br>
+                                       OS: HarmonyOS 2.0<br>
+                                       ChipSet: Qualcomm Snapdragon 680G 4G (6 nm)<br>
+                                       CPU: Octa-core (4×2.4 GHz Cortex-A73 & 4×1.9 GHz Cortex-A53)<br>      
+                                  </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$359 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Nova-10SE" data-price="359" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Nova-11pro.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Nova-11pro</a></h3>
+                                    <p align="justify">Promotion Gift:<br>
+                                       Free Screen (in Box)<br>
+                                       Free Case Original<br>
+                                       Free Huawei Bage<br>
+                                       Color: Black|Green<br>
+                                       Screen Size: 6.78 inches<br>
+                                       RAM8G|ROM256<br>
+                                       OS: HarmonyOS 3.0<br>
+                                       ChipSet: Qualcomm SM7325 Snapdragon 778G 4G (6 nm)<br>
+                                       CPU: Octa-core (4×2.4 GHz Kryo 670 & 4×1.8 GHz Kryo 670)<br>
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$569  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Nova-11pro" data-price="569" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Nova9se_v3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Nova9se</a></h3>
+                                    <p align="justify">Promotion Gift:<br> 
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Healthy Scale<br>
+                                       Huawei Nova 9 SE Spec Highlight<br> 
+                                       Color: Blue, Black, Silver<br>
+                                       Screen Size: 6.78 inches<br>
+                                       RAM8G|ROM128G<br>
+                                       OS: Android 11, EMUI 12, no Google Play Services<br>
+                                       CPU: Octa-core (4×2.4 GHz Kryo 265 Gold & 4×1.9 GHz Kryo 265 Silver)<br>
+                                       store warranty 1year
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$299  </h4>
+                                       <span>(4.5)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Nova9se" data-price="299" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Y72.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Y72</a></h3>
+                                    <p align="justify">Promotion Gift:  
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Luxury case<br>
+                                       128GB 8GB RAM<br>
+                                       Color: Black, Green<br>
+                                       Screen Size: 6.75 inches, 110.0 cm2<br>
+                                       OS: HarmonyOS 4.0<br>
+                                       CPU: Octa-core (4×2.0 GHz Cortex-A73 & 4×1.7 GHz Cortex-A53)<br>
+                                       GPU: Mali-G51 MP4<br>
+                                       Camara Triple: 
+                                       50 MP, f/1.8, (wide), AF
+                                       2 MP, f/2.4, (macro)
+                                       LED flash, HDR, panorama
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$179</h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Y72" data-price="179" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Huawei-Y90_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Y90</a></h3>
+                                    <p align="justify">Promotion Gift: <br> 
+                                       Free Screen (in Box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Mini Bag<br>
+                                       Free Mini Speaker<br>
+                                       Color: Blue, Black, Silver<br>
+                                       Screen Size: 6.75 inches<br>
+                                       RAM8G|ROM128G<br>
+                                       OS: EMUI 12<br>
+                                       Chip: Qualcomm SM6225 Snapdragon 680 4G (6 nm)<br>
+                                       CPU: Octa-core (4×2.4 GHz Kryo 265 Gold & 4×1.9 GHz Kryo 265 Silver)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$239  </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Y90" data-price="239" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Huawei/Mate-60-RS_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Huawei-Mate-60-RS</a></h3>
+                                    <p align="justify">Network :<br>Technology	GSM / CDMA / HSPA / CDMA2000 / LTE / 5G
+                                       Huawei-Mate-60-RS
+                                       Dimensions	163.7 x 79 x 8.1 mm (6.44 x 3.11 x 0.32 in)<br>
+                                       Weight	242 g or 246 g (8.54 oz)<br>
+                                       IP68 dust/water resistant (up to 6m for 30 min)<br>
+                                       Type	LTPO OLED, 1B colors, 120Hz<br>
+                                       Size	6.82 inches, 114.4 cm2 (~88.5% screen-to-body ratio)<br>
+                                       Resolution	1260 x 2720 pixels, 19.5:9 ratio (~440 ppi density)<br>
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$1,759  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Huawei-Mate-60-RS" data-price="1759" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- List of kind Oppo Phone -->
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/NA_N2-Flip_v3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo/NA_N2_Flip</a></h3>
+                                    <p align="justify">Oppo Find N2 Flip 5G<br>
+                                       Free Case (in Box)<br>
+                                       Screen (in Box)<br>
+                                       Warranty 1 Year by Oppo<br>
+                                       Storage: 256G|8G<br>
+                                       Color: Purple, Black<br>
+                                       SIM: Dual Nano SIM (5G)<br>
+                                       LCD: Foldable LTPO AMOLED, 120Hz, HDR10+, 1200 nits (HBM), 1600 nits (peak)
+                                       Screen Size: 6.8 inches, 108.0 cm2 (~86.4% screen-to-body ratio)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$769  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-N2-Flip" data-price="769" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/NA_Oppo_A94.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-A94</a></h3>
+                                    <p align="justify">Oppo A94 
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Free Power Bank<br>
+                                       Color: Black<br>
+                                       SIM: Dual SIMS<br> 
+                                       Screen Size: 6.43 inches<br>
+                                       Storage: 128G|8G Ram<br>
+                                       OS: Android 10.0; ColorOS 7<br>
+                                       ChipSet: Mediatek MT6779V Helio P95 (12 nm)
+                                       CPU: Octa-core (2×2.2 GHz Cortex-A75 & 6×2.0 GHz Cortex-A55)                                    
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$249  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-A94" data-price="249" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/NA_Oppo-A78.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-A78</a></h3>
+                                    <p align="justify">Oppo A78 
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Free Bluetoot<br>
+                                       Color: Black, Orrange<br>
+                                       Screen Size: 6.43 inches<br>
+                                       Storage: 256G|8+8<br>
+                                       IP: IP54, dust and splash resistant<br>
+                                       LCD: AMOLED, 90Hz, 430 nits<br>
+                                       OS: Android 12, ColorOS 12.1
+                                       CPU: Octa-core (4×2.4 GHz Kryo 265 Gold & 4×1.9 GHz Kryo 265 Silver)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$239  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-A78" data-price="239" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/NA_Oppo-A95_1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-A95</a></h3>
+                                    <p align="justify">
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Free Power Bank<br>
+                                       Color: Starry Black, Rainbow Silver<br>
+                                       SIM: Dual SIMS<br> 
+                                       Screen Size: 6.43 inches<br>
+                                       Storage: 128G|8G Ram<br>
+                                       OS: Android 10.0; ColorOS 7<br>
+                                       CPU: Octa-core (4×2.0 GHz Kryo 260 Gold & 4×1.8 GHz Kryo 260 Silver)<br>
+                                       Store Warranty 1year
+                                 
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$239  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-A95" data-price="239" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/Oppo-N3-Flip_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-N3-Flip</a></h3>
+                                    <p align="justify">Oppo Find N3 Flip 5G (In Stock))
+                                       Free Case (in Box)<br>
+                                       Screen (in Box)<br>
+                                       Storage: 256G+12G<br>   
+                                       Color: Gold,Black<br>
+                                       SIM: Dual Nano SIM (5G)<br>
+                                       LCD: Foldable LTPO3 OLED, 1B colors, Dolby Vision, 120Hz, 2800 nits (peak)<br>
+                                       Screen Size: 7.82 inches, 196.7 cm2 (~89.6% screen-to-body ratio)<br>
+                                       Weigt: 239 g or 245 g (8.43 oz)<br>
+                                       OS: Android 13, ColorOS 13.2<br>
+                                       CPU: Octa-core (1×3.2 GHz Cortex-X3 & 2×2.8 GHz Cortex-A715 & 2×2.8 GHz Cortex-A710 & 3×2.0 GHz Cortex-A510)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$999  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-N3-Flip" data-price="999" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/Oppo-Reno-8z.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-Reno-8z </a></h3>
+                                    <p align="justify">
+                                       Promotion:<br>
+                                       Free Screen (in box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Mini Speaker<br>
+                                       Free Bluetooth<br> 
+                                       Storage: 128G|8G<br>
+                                       Color: Gold|Black<br>
+                                       SIM: Dual SIM<br> 
+                                       Screen Size: 6.43 inches<br> 
+                                       OS: Android 11, ColorOS 12<br>
+                                       ChipSet: MediaTek MT6877 Dimensity 900 5G (6 nm)<br>
+                                       CPU: Octa-core (2×2.4 GHz Cortex-A78 & 6×2.0 GHz Cortex-A55)<br>
+                                       Store Warranty 1year
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$299  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-Reno-8z" data-price="299" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/Pre_Reno8_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-Pre_Reno8</a></h3>
+                                    <p align="justify">
+                                       Promotion:
+                                       Free Screen (in box)<br>
+                                       Free Case (in Box)<br>
+                                       Free Handy Fan<br>
+                                       Free Back Pack ($29)<br>
+                                       Free Smart Special Number<br>
+                                       Storage: 256G|8G<br>
+                                       Color: Gold|Black<br>
+                                       SIM: Dual SIM <br>
+                                       Screen Size: 6.43 inches<br> 
+                                       OS: Android 11, ColorOS 12<br>
+                                       ChipSet: MediaTek Dimensity 1300 (6 nm)<br>
+                                       CPU: Octa-core (1×3.0 GHz Cortex-A78 & 3×2.6 GHz Cortex-A78 & 4×2.0 GHz Cortex-A55)
+                                       GPU: Mali-G77 MC9
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$329  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-Pre_Reno8_v2" data-price="329" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Oppo/Pre_Reno11-Pro.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Oppo-Pre_Reno11-Pro</a></h3>
+                                    <p align="justify">
+                                       Free Case (in Box)<br>
+                                       Free Mini Speaker<br>
+                                       Storage: 512G+24g (12g+12g)<br>
+                                         Color: White, Grey<br>
+                                       SIM: Dual SIM <br>
+                                       Screen Size: 6.7 inches<br> 
+                                       OS: Android 14, ColorOS 14<br>
+                                       ChipSet: Mediatek Dimensity 8200 (4 nm)<br>
+                                       CPU: Octa-core (1×3.1 GHz Cortex-A78 & 3×3.0 GHz Cortex-A78 & 4×2.0 GHz Cortex-A55)
+                                       GPU: Mali-G610 MC6<br>
+                                       Camara Tripple:<br>
+                                       50 MP, f/1.8, 26mm (wide), 1/1.95″, PDAF, OIS<br>                          
+                                       </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$599  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Oppo-Pre_Reno11-Pro" data-price="599" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- List of kind Realme Phone -->
+
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/C55_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme-C55-V2</a></h3>
+                                    <p align="justify">
+                                       256G+8=$199<br>
+                                       128G+6=$179<br>
+                                       Color: Gold, Black<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free Earphone<br>
+                                       Screen: 6.72 inches<br>
+                                       OS: Android 13, Realme UI 4.0<br>
+                                       Chipset: Mediatek Helio G88 (12nm)<br>
+                                       CPU: Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)<br>
+                                       Storage: 128GB 6GB RAM<br>
+                                       
+                                  </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$179  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme-C55-V2" data-price="179" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/C55_v4.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme-C55-V4</a></h3>
+                                    <p align="justify">
+                                       128G+6=$179<br>
+                                       256G+8=$199<br>
+                                       Color: Green, Black<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free Earphone<br>
+                                       Screen: 6.72 inches<br>
+                                       OS: Android 13, Realme UI 4.0<br>
+                                       Chipset: Mediatek Helio G88 (12nm)<br>
+                                       CPU: Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)<br>
+                                       Storage: 128GB 6GB RAM
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$179  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme-C55-V4" data-price="179" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/mr178-7.jpg" alt="Images"></a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme-mr178-7</a></h3>
+                                    <p align="justify"> 128G+6=$179
+                                       256G+8=$199<br>
+                                       Color: Green, Black<br>                                    
+                                       Screen: 6.72 inches, 109.0 cm2<br>
+                                       OS: Android 14, Realme UI<br>
+                                       CPU: Octa-core (4×2.8 GHz Cortex-A73 & 4×1.9 GHz Cortex-A53)<br>
+                                       Storage: 128GB 8GB RAM <br>         
+                                   </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$179  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme-mr178-7" data-price="179" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/Pre_Realme7_Pro_web2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme7_Pro</a></h3>
+                                    <p align="justify">
+                                       Color: Mirror Blue, Mirror Silver<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Screen: 6.4 inches<br>
+                                       OS: Android 10, Realme UI<br>
+                                       CPU: Octa-core (2×2.3 GHz Kryo 465 Gold & 6×1.8 GHz Kryo 465 Silver)<br>
+                                       GPU: Adreno 618<br>
+                                       Storage: 128GB 8GB RAM<br>
+                                       Store Warranty 1 year<br>
+                                       Free Mini Speaker<br>
+                                       Free Screen<br>
+                                    <p>
+                                    <hr>
+                                    <div class="content-in">
+                                    <h4>$269 </h4>
+                                       <span>(4.5)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme7_Pro" data-price="269" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/realme_C33_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme-C33-V1</a></h3>
+                                    <p align="justify">
+                                       32G+3G: 129$<br>
+                                       64G+4G: 149$<br>
+                                       Color: Green, Black, Gold<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Screen: 6.5 inches<br>
+                                       OS: Android 12, Realme UI S<br>
+                                       Chipset: Unisoc Tiger T616 (12 nm)<br>
+                                       CPU: Octa-core (2×1.8 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)<br>
+                                       GPU: Mali-G57<br>
+                                       Main Camara Tripple:<br>
+                                       50 MP, (wide), PDAF<br>
+
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$129 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme-C33-V1" data-price="129" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/realme-c21y.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                       <h3><a href="#">Realme-C21y</a></h3>
+                                       <p align="justify">
+                                       Color: Blue, Gray<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free Earphone<br>
+                                       Free Other Accessories<br>
+                                       Store Warranty 1 year<br>
+                                       Screen: 6.5 inches<br>
+                                       OS: Android 11, Realme UI 2.0<br>
+                                       Chipset: MediaTek Helio G85 (12nm)<br>
+                                       CPU: Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)<br>
+                                       GPU: Mali-G52 MC2<br>
+                                       Storage: 128GB 4GB RAM<br>
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$189  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme-C21y" data-price="189" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/Realme7_web1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme7</a></h3>
+                                    <p align="justify">
+                                       Color: Blue/White<br>
+                                       Free Case (in Box)<br>
+                                       Free Screen (in Box)<br>                               
+                                       Screen: 6.5 inches<br>
+                                       OS: Android 10, Realme UI<br>
+                                       Chipset: Mediatek Helio G95 (12 nm)<br>
+                                       CPU: Octa-core (2×2.05 GHz Cortex-A76 & 6×2.0 GHz Cortex-A55)<br>
+                                       GPU: Mali-G76 MC4<br>
+                                       Storage: 128GB 8GB RAM<br>
+                                       Main Camara Quad:
+                                       64 MP, f/1.8, 26mm (wide), 1/1.73″, 0.8µm, PDAF
+                                       8 MP, f/2.3, 119˚, 16mm (ultrawide), 1/4.0″, 1.12µm 
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$219  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme7" data-price="219" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Realme/Realme7i-web.2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Realme7i</a></h3>
+                                    <p align="justify">
+                                       Color: Blue,  Green<br>
+                                       Free Case (in Box)<br>
+                                       Free Screen (in Box)<br>
+                                       Storage: 128GB 8GB RAM<br>
+                                       Screen: 6.5 inches
+                                       OS: Android 10, Realme UI
+                                       Chipset: Qualcomm SM6115 Snapdragon 662 (11 nm)
+                                       CPU: Octa-core (4×2.0 GHz Kryo 260 Gold & 4×1.8 GHz Kryo 260 Silver)
+                                       GPU: Adreno 610
+                                       Main Camara Quad:
+                                       64 MP, f/1.8, 26mm (wide), 1/1.73″, 0.8µm, PDAF
+                                       8 MP, f/2.3, 119˚, 16mm (ultrawide), 1/4.0″, 1.12µm
+                                       2 MP, f/2.4, (macro)
+                                       2 MP, f/2.4, (depth)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$199  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>                                                  
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Realme7i" data-price="199" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Modal Total Price -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- Link jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+   <!-- Link Javascrip -->
+   <script src="script.js"></script>
+
+
+</body>
+
+</html>

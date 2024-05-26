@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Phones</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="https://rajamanickam.vercel.app/favicon-rajamanickam.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</head>
+<body>
+   <main>
+      <!-- responsive menu bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+         <a class="navbar-brand" href="#"><strong><i class="fa-regular fa-mobile"></i></strong></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mx-auto ">
+               <li class="nav-item active"><a class="nav-link text-white h5" href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="Accessories.html"><i class="fa-solid fa-headphones"></i>Accessories</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="Register.html"><i class="fa-solid fa-registered"></i>Register</a></li>
+               <li class="nav-item active"><a class="nav-link text-white h5" href="contact.html"><i class="fa-solid fa-address-book"></i>Contact Us</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ">
+               <input class="form-control mr-sm-2" type="search" id="search_field"  placeholder="Search" aria-label="Search"><i class="fa-brands fa-searchengin"></i>
+            </form>
+            <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+               data-target="#staticBackdrop">
+                <i class="fas fa-shopping-cart total-count"></i>
+            </button>
+         </div>
+      </nav>
+       <!-- responsive slide  -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"  aria-label="Slide 5"></button>
+         </div>
+         <div class="carousel-inner">
+            <img src="https://image-us.samsung.com/SamsungUS/home/mobile/phones/pf/all-phones/04292024/PF_KV5_S24-ultra_Lifestyle_pc.jpg?$header-jpg$" height="200px" class="d-block w-100" alt="...">
+           <div class="carousel-item active">
+             <img src="https://img.xfinitymobile.com/image/upload/c_fit,f_auto,q_auto,fl_lossy/v1705094007/client/v2/images/NPI-Samsung-Eureka-Pre-Order-Up-to-800-off-TIPS/Shop_Banner_640.png" height="250px" class="d-block w-50" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkL4NlRA38OSKj5UnypCCFLEeptEv_8uPEM4aEi2759osRTU98suVplJH7w&s" height="250px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="data:image/jpeg;base64,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" height="250px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item"> 
+             <img src="data:image/jpeg;base64,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"height="200px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+             <img src="data:image/jpeg;base64,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"height="200px" class="d-block w-100" alt="...">
+           </div>
+           <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WzONZ8XuYL3wwjMCY9FlQuHdJIKAdi7F9lwIo7SM5riYavz9GpYr9Rnx_DAkQuDjJDk&usqp=CAU" height="200px"class="d-block w-100" alt="...">
+          </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <!-- list productts cards -->
+      <section> 
+         <div class="featured-area pt-3 pb-70">
+            <div class="container">
+               <h1 class="text-center text-capitalize"><font color="Red">List of Mobile Phone Products</font></h1>
+               <div class="tab featured-tab-area">
+                  <div class="tab_content current active pt-3"> 
+                     <div class="tabs_item current">
+                        <div class="row justify-content-center">
+                           
+                           <!-- List of Samsung phone -->
+                        
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/Galaxy_A2_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#"> Galaxy A25 256G</a></h3>
+                                    <p align="justify">                                       
+                                       Galaxy A25 5G  Promotion <br>
+                                       Galaxy A23 5G Spec<br>
+                                       Color: Blue, Black <br>
+                                       Screen Size: 6.5 inches<br> 
+                                       LCD: Super AMOLED, 120Hz, 1000 nits (HBM)<br>
+                                       Android: Android 14, One UI 6<br>
+                                       Chipset: Exynos 1280 (5 nm)<br>
+                                       CPU: Octa-core (2×2.4 GHz Cortex-A78 & 6×2.0 GHz Cortex-A55)
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 369 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="GalaxyA25" data-price="369" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                              <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/Galaxy-A35.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy A35</a></h3>
+                                    <p align="justify">
+                                       Promotion 
+                                       Free Adaptor
+                                       Galaxy A35 5G 128GB|8GB (New Year Gift) quantity
+                                       1
+                                       Categories Samsung Mobile, Smartphone
+                                       Chipset	Exynos 1380 (5 nm)
+                                       CPU	Octa-core (4×2.4 GHz Cortex-A78 & 4×2.0 GHz Cortex-A55)
+                                       GPU	Mali-G68 MP5
+                                       MEMORY
+                                       Card slot	microSDXC (uses shared SIM slot)
+                                       Internal	128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM
+                                       MAIN CAMERA
+
+                                       
+                                        </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 379 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="GalaxyA35" data-price="379" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/NA_Z_Fold5_v8.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy Z Fold 5</a></h3>
+                                    <p align="justify">Galaxy Z Fold 5<br>
+                                       Free Adapter 25W<br>
+                                       No-worry Crack (1year)<br>
+                                       Free Front Screen<br>
+                                       Free SIM Smart<br>
+                                       Free Mini speaker<br>
+                                       Joint Telegram<br>
+                                    
+                                       Chart Telegram<br>
+
+                                       Galaxy Z Fold 5 1T Store Warranty 1 year (OFF: $400) quantity
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 1,499 </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                    <button type="button" data-name="Galaxy-Z-Fold5" data-price="1499" class="default-btn border-radius-5">Add to cart</button>-
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/Pre_Galaxy-A15_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy A15 </a></h3>
+                                    <p align="justify">
+                                       Promotion <br>
+                                       Free Screen <br>
+                                       Warranty 1 Year<br>
+                                       Galaxy A15 Spec:<br>
+                                       Storage: 128GB+8G<br>
+                                       Color: Blue, Black<br>
+                                       Screen Size: 6.5 inches<br> 
+                                       Android: Android 14, One UI 6<br>
+                                       CPU: Octa-core (2×2.2 GHz Cortex-A76 & 6×2.0 GHz Cortex-A55)
+                                     </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 219 </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Galaxy15" data-price="219" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/s23_v1-1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy S23 </a></h3>
+                                    <p align="justify" style="font-size:10px">
+                                       
+                                       In Stock Price 
+                                       128G+8G=$899 Offer $769 
+                                       Free Adaptor 25W
+                                       Free Case
+                                       Free Screen
+                                       Galaxy S23  Spec
+                                       Screen Size: 6.1 inches 
+                                       Android Android 13, One UI 5.1
+                                       Chipset: Qualcomm SM8550 Snapdragon 8 Gen 2 (4 nm)
+                                       CPU: Octa-core (1×3.2 GHz Cortex-X3 & 2×2.8 GHz Cortex-A715 & 2×2.8 GHz
+                                       Cortex-A710 & 3×2.0 GHz Cortex-A510)
+                                       GPU: Adreno 740
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 769</h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="GalaxyS23" data-price="769" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/S24.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy S24 Plus</a></h3>
+                                    <p align="justify" style="font-size:10px">Galaxy S24 Plus 512G|12G
+                                       Galaxy S24 Plus <br> 
+                                       Color : Black |Purple| Yellow<br>
+                                       1 Year warranty<br>    
+                                       Free Adaptor <br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free T-shirt<br>
+                                       Warranty 1 Year<br>
+                                       Galaxy S24 Plus 512G|12G  quantity
+
+                                      </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$1,159  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="GalaxyS24-Plus" data-price="1159" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                           <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/Samsjung-A55_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy A55 </a></h3>
+                                    <p align="justify" style="font-size:10px">
+                                       Galaxy A55 5G Promotion<br>
+                                       Free Screen<br>
+                                       Free Adaptor<br>
+                                       Screen Size: 6.6 inches, 106.9 cm2 <br>
+                                       Display: Super AMOLED, 120Hz, HDR10+, 1000 nits (HBM)<br>
+                                       Android: Android 14, One UI 6.1<br>
+                                       Chipset: Exynos 1480<br>
+                                       CPU: Octa-core (4×2.75 GHz Cortex-A78 & 4×2.0 GHz Cortex-A55)
+                     
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$ 449 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="GalaxyA55" data-price="449" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Samsung/Z_Flip5_Global_Color_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Galaxy Z Flip5 </a></h3>
+                                    <p align="justify" style="font-size:10px">
+                                       Flip 5 (Global Spec)<br>
+                                       Free Front Screen<br>
+                                       Free Adaptor<br>
+                                       Categories Samsung Mobile, Smartphone
+                                       NETWORK<br>
+                                       Technology	GSM / CDMA / HSPA / EVDO / LTE / 5G
+                                       LAUNCH<br>
+                                       Announced	2023, July 26
+                                       Status	Available. Released 2023, August 11
+                                       BODY
+                                       Folded: 85.1 x 71.9 x 15.1 mm
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$799  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Galaxy-Z-Flip5" data-price="799" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                            <!-- List of Vivo phone -->
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/NA_v23E.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO V23e 5G 128G|8G </a></h3>
+                                    <p align="justify">
+                                       Promotion:<br> 
+                                       Color: Blue, Silver<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free Power Bank<br>
+                                       Storage & Price:
+                                       128G|8G $329 Offer $289
+                                       256G|8G $339 Offer $299
+                                       Screen: 6.44 inches
+                                       OS: Android 11, Funtouch 12
+                                       ChipSet: MediaTek Dimensity 810 5G (6 nm)
+                                       CPU: Octa-core (2×2.4 GHz Cortex-A76 & 6×2.0 GHz Cortex-A55)
+                                       GPU: Mali-G57 MC2
+                                       
+                                       </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$299</h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-V23e" data-price="299" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/V25pro_V1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO V25 Pro</a></h3>
+                                    <p align="justify">VIVO V25 Pro 5G 256G|12G ធានា១ឆ្នាំ 
+                                       Promotion:
+                                       Free Case
+                                       Free Screen
+                                       Free Mini Speaker
+                                       Categories Smartphone, Vivo Mobile
+                                       FEATURES
+                                       Sensors	Fingerprint (under display, optical), accelerometer, gyro, proximity, compass
+                                       Color changing back panel color
+                                       BATTERY
+                                       Type	Li-Po 4830 mAh, non-removable
+                                       Charging	Fast charging 66W, 40% in 15 min, 71% in 30 min (advertised)
+                                       MISC
+                                       Colors	Pure Black, Sailing Blue
+ 
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$549  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-V25-Pro" data-price="549" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/Viv-y21s.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO Y21s 128G|4G</a></h3>
+                                    <p align="justify">
+                                       Vivo Y21s (128G|4G)<br>
+                                       Color: White<br>
+                                       Free Screen<br>
+                                       Vivo Y21s Spec Highlight:<br>
+                                       Screen: 6.51 inches<br>
+                                       OS: Android 11, Funtouch 11.1<br>
+                                       ChipSet: Mediatek MT6769V/CU Helio G80 (12 nm)<br>
+                                       CPU: Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)<br>
+                                       GPU: Mali-G52 MC2<br>
+                                       Storage: 128GB 4GB RAM
+                                           
+                                  </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$189 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-Y21s" data-price="189" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/Vivo_Y27.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO Y27 128G+6G </a></h3>
+                                    <p align="justify">
+                                       Promotion Y27 4G<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Vivo Y27 Spec Highlight:<br>
+                                       Color:Brown, Blue<br>
+                                       Screen: 6.47 inches<br>
+                                       OS: Android 13, Funtouch 13<br>
+                                       Chipset: Snapdragon 680<br>
+                                       CPU: Octa-core (2×2.8 GHz Cortex-A715 & 6x Cortex-A510)<br>
+                                       GPU: Mali-G610 MC4<br>
+                                       Storage: 128GB, 6GB RAM
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$189  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-Y27" data-price="189" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/Vivo_Y35.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO Y35 128G+8G </a></h3>
+                                    <p align="justify">
+                                       Promotion <br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Vivo Y35 Spec Highlight:<br>
+                                       Color: Black<br>
+                                       Screen: 6.58 inches<br>
+                                       LCD: IPS LCD, 90Hz, 550 nits (HBM)<br>
+                                       OS: Android 13, Funtouch 13<br>
+                                       Chipset: Qualcomm SM6225 Snapdragon 680 4G (6 nm)<br>
+                                       CPU: Octa-core (4×2.4 GHz Kryo 265 Gold & 4×1.9 GHz Kryo 265 Silver)
+                                       GPU: Adreno 610
+                                       Storage: 128GB, 8GB RAM
+                                     </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$219  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-Y35" data-price="219" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/Vivo-V27-5g_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO V27 5G 256G|8G </a></h3>
+                                    <p align="justify">
+                                       In Stock + VIP Gift<br>
+                                       Free Case from Vivo<br>
+                                       Free Screen<br>
+                                       LCD Cracked warranty<br>
+                                       Storage: 256G|8G<br>
+                                       Display Type: AMOLED, 1B colors, 120Hz, HDR10+
+                                       Screen Size: 6.78 inches, 111.0 cm2 (~90.4% screen-to-body ratio)
+                                       OS: Android 13, Funtouch 13
+                                       ChipSet: Mediatek Dimensity 7200 (4 nm)
+                                       CPU: Octa-core (2×2.8 GHz Cortex-A715 & 6x Cortex-A510)
+                                       GPU: Mali-G610 MC4
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$459</h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-V27" data-price="459" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/Vivo-V29e.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO V29e 256G|20G </a></h3>
+                                    <p align="justify">
+                                       Storage: 256G|20G (12+8G)<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       SIM: Dual SIM<br> 
+                                       Display Type: AMOLED, 1B colors, 120Hz, HDR10+<br>
+                                       Screen Size: 6.67 inches <br>
+                                       OS: Android 13, Funtouch 13<br>
+                                       ChipSet: Qualcomm SM6375 Snapdragon 695 5G (6 nm)<br>
+                                       CPU: Octa-core (2×2.2 GHz Kryo 660 Gold & 6×1.8 GHz Kryo 660 Silver)
+                                       GPU: Adreno 619
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$349  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-V29e" data-price="349" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Vivo/VivoY33S.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">VIVO Y33s 128G|8G </a></h3>
+                                    <p align="justify">
+                                       Color: Blue, Glow<br>
+                                       Free Case<br>
+                                       Free Screen<br>
+                                       Free Vivo Bluetooth<br>
+                                       Vivo Y33s Spec Highlight:<br>
+                                       Screen: 6.51 inches<br>
+                                       OS: Android 11, Funtouch 11.1<br>
+                                       ChipSet: Mediatek MT6765 Helio P35 (12nm)<br>
+                                       CPU: Octa-core (4×2.35 GHz Cortex-A53 & 4×1.8 GHz Cortex-A53)<br>
+                                       GPU: PowerVR GE8320<br>
+                                       Storage: 64GB 4GB RAM
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$249 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="VIVO-Y33s" data-price="249" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- List of kind Xiaomi Phone -->
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Clear_mi-5x_web-300x300-1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Mi 5x 32G </a></h3>
+                                    <p align="justify">
+                                       Color: Black<br>
+                                       32GB:RAM4G<br>
+                                       Price: Only $129<br>
+                                       Promotion Available<br>
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Categories Smartphone, Xiaomi Mobile<br>
+                                       Chipset	Qualcomm MSM8953 Snapdragon 625<br>
+                                       CPU	Octa-core 2.0 GHz Cortex-A53<br>
+                                       GPU	Adreno 506
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$129  </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                       <hr>
+                                    </div>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Mi" data-price="129" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Note11_v3.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Redmi Note 11</a></h3>
+                                    <p align="justify"> 
+                                       Redmi Note 11 Promotion <br>
+                                       Color: Blue|Grey<br>
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Screen Size: 6.43 inches<br>
+                                       Display: AMOLED, 90Hz, 700 nits, 1000 nits (peak)<br>
+                                       Chipset: Qualcomm SM6225 Snapdragon 680 4G (6 nm)<br>
+                                       CPU: Octa-core (4×2.4 GHz Kryo 265 Gold & 4×1.9 GHz Kryo 265 Silver)
+                                                                   
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$199  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Redmi-Note11" data-price="199" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Redmi_A1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Redmi A1 </a></h3>
+                                    <p align="justify">
+                                       
+                                       Promotion Price<br>
+                                       Color: Grey<br>
+                                       Free Screen<br>
+                                       Storage: 32G|2G<br>
+                                       Screen Size: 6.52 inches<br>
+                                       Android: Android 12 (Go edition), MIUI 12<br>
+                                       Chipset: Mediatek MT6761 Helio A22 (12 nm)<br>
+                                       CPU: Quad-core 2.0 GHz Cortex-A53<br>
+                                       GPU: PowerVR GE8320
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$109  </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Redmi-A1" data-price="109" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Redmi9A_web.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Redmi 9A </a></h3>
+                                    <p align="justify">   
+                                       Promotion Price<br>
+                                       32G+3G=109<br>
+                                       64G+4G=$129<br>
+                                       Color: Grey<br>
+                                       Free Screen<br>               
+                                       Screen Size: 6.53 inches<br>
+                                       Android: Android 10.0; MIUI 11<br>
+                                       Chipset: MediaTek Helio G25 (12 nm)<br>
+                                       CPU: Octa-core (4×2.0 GHz Cortex-A53 & 4×1.5 GHz Cortex-A53)
+                                       GPU: PowerVR GE8320
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$109  </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Redmi-9A" data-price="109" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Redmi10_5G.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Redmi 10 5G 128G|6G </a></h3>
+                                    <p align="justify">
+                                       Happy Promotion <br>
+                                       Color: Green|Grey<br>
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Free Mini Speaker<br>
+                                       Screen Size: 6.58 inches<br>
+                                       Display Type: IPS LCD, 90Hz<br>
+                                       Android: Android 12, MIUI 13<br>
+                                       Chipset: MediaTek MT6833 Dimensity 700 (7 nm)<br>
+                                       CPU: Octa-core (2×2.2 GHz Cortex-A76 & 6×2.0 GHz Cortex-A55)<br>
+                                       GPU: Mali-G57 MC2
+                                       <hr>
+                                    <div class="content-in">
+                                       <h4>$239  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Redmi10" data-price="239" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Redmi12c.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Redmi 12C 64G+4G  </a></h3>
+                                    <p align="justify">
+                                       
+                                       Promotion Price<br>
+                                       Color: Grey|Purple<br>
+                                       Free Screen<br>
+                                       Free Case<br>
+                                       Free Power Bank<br>
+                                       Storage: 64G|4G<br>
+                                       Screen Size: 6.71 inches<br>
+                                       Android: MIUI 13<br>
+                                       Chipset: Mediatek MT6769Z Helio G85 (12nm)<br>
+                                       CPU: Octa-core (2×2.0 GHz Cortex-A75 & 6×1.8 GHz Cortex-A55)
+                                       GPU: Mali-G52 MC2
+                                        
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$139  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Redmi-12C" data-price="139" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Xiaomi-14.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Xiaomi Mi 14 512GB|12GB</a></h3>
+                                    <p align="justify">
+                                       DISPLAY
+                                       Type	LTPO OLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1000 nits (typ), 3000 nits (peak)
+                                       Size	6.36 inches, 97.6 cm2 (~89.3% screen-to-body ratio)<br>
+                                       Resolution	1200 x 2670 pixels, 20:9 ratio (~460 ppi density)<br>
+                                       Protection	Corning Gorilla Glass Victus<br>
+                                       PLATFORM
+                                       Chipset	Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)<br>
+                                       CPU	Octa-core (1×3.3 GHz Cortex-X4 & 3×3.2 GHz Cortex-A720 & 2×3.0 GHz Cortex-A720 & 2×2.3 GHz Cortex-A520)
+                                       GPU	Adreno 750     
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$799  </h4>
+                                       <span>(4.8)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Xiaomi-Mi-14" data-price="799" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Xiaomi/Xiaomi-X6-Pro_v1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Poco X6 Pro 512G+12</a></h3>
+                                    <p align="justify">
+                                       Poco X6 Pro (Global Version)<br>
+                                       512G+12= $389<br>
+                                       Color: Black<br>
+                                       Poco X6 Pro 512G+12 (NEW Arrival) quantity
+                                       1<br>
+                                       Categories Smartphone, Xiaomi Mobile NETWORK<br>
+                                       Store Warranty 1 year<br>
+                                       OS	Android 14, HyperOS
+                                       Chipset	Mediatek Dimensity 8300 Ultra (4 nm)
+                                       CPU	Octa-core (1×3.35 GHz Cortex-A715 & 3×3.20 GHz Cortex-A715 & 4×2.20 GHz Cortex-A510)
+                                       GPU	Mali G615-MC6
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$389  </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Poco-X6-Pro " data-price="389" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- List of kind Nokia Phone -->
+
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/NA_Nokia2660_v2.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia Flip 2660</a></h3>
+                                    <p align="justify"><br>
+                                       Categories Nokia Mobile, Smartphone<br>
+                                       NETWORK<br>
+                                       Technology	GSM / HSPA / LTE<br>
+                                       Dimensions<br>	
+                                       Weight	123 g (4.34 oz)<br>
+                                       SIM	Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)
+                                       DISPLAY<br>
+                                       Type	TFT LCD<br>
+                                       Size	2.8 inches, 24.3 cm2<br>
+                                       Resolution	240 x 320 pixels, 4:3 ratio (~143 ppi density)
+                                       Secondary external 1.77″ display
+                                        
+                                  </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$65  </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia-Flip-2660" data-price="65" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Nokia-5.1-Plus1.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia 5.1 Plus</a></h3>
+                                    <p align="justify">
+                                       — FEATURE —
+                                       Wehgit: 160g, 8.1mm thickness<br>
+                                       OS: Android 8.1, up to Android 9.0; Android One<br>
+                                       Membory: 64GB storage, microSD card slot<br>
+                                       Chipset: Mediatek MT6771 Helio P60 (12 nm)<br>
+                                       CPU: Octa-core (4×1.8 GHz Cortex-A73 & 4×1.8 GHz Cortex-A53)<br>
+                                       Color: Night black, Glacier white, Baltic sea blue
+                                       — SCREEN 
+                                       5.86″ – 720×1520 pixels    
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$219  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia 5.1 Plus" data-price="219" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Nokia-6.1-Plus(2).jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia 6.1 Plus</a></h3>
+                                    <p align="justify">                      
+                                       — FEATURE —<br>
+                                       Wehgit: 151g, 8mm thickness<br>
+                                       OS: Android 8.1, up to Android 9.0; Android One<br>
+                                       SIM: Hybrid Dual SIM (Nano-SIM, dual stand-by)<br>
+                                       Membory: 64GB storage, microSD card slot<br>
+                                       Chipset: Qualcomm SDM636 Snapdragon 636 (14 nm)<br>
+                                       CPU: Octa-core 1.8 GHz Kryo 260<br>
+                                       Color: Black, Blue, White     <br>         
+                                       — SCREEN —
+                                       5.8″ – 1080×2280 pixels
+                                   </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$269  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia-6.1-Plus" data-price="269" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Nokia-8-Sirocco(3).jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia 8 Sirocco</a></h3>
+                                    <p align="justify">
+                                       — FEATURE —<br>
+                                       Release: 2018, April<br>
+                                       Wehgit: 177g, 7.5mm thickness<br>
+                                       OS: Android 8.0, up to Android 9.0; Android One<br>
+                                       SIM: Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)<br>
+                                       Membory: 128GB storage, no card slot<br>
+                                       CPU: Octa-core (4×2.5 GHz Kryo & 4×1.8 GHz Kryo)<br>
+                                       Color: Black<br>
+                                       
+                                       — SCREEN —<br>
+                                       5.5″ – 1440×2560 pixels
+                                       
+                                    <p>
+                                    <hr>
+                                    <div class="content-in">
+                                    <h4>$609 </h4>
+                                       <span>(4.6)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia-8-Sirocco" data-price="609" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Nokia-2.1(4).jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia 2.1</a></h3>
+                                    <p align="justify">  
+                                       — FEATURE —<br>
+                                       Wehgit: 174g, 9.7mm thickness<br>
+                                       OS: Android 8.1 Oreo, up to 9.0 Pie; Android One<br>
+                                       SIM: Dual SIM (Nano-SIM, dual stand-by)<br>
+                                       Membory: 8GB storage, microSD card slot<br>
+                                       Chipset: Qualcomm MSM8917 Snapdragon 425 (28 nm)<br>
+                                       CPU: Quad-core 1.4 GHz Cortex-A53<br>
+                                       Color: Blue/Copper, Blue/Silver, Grey/Silver<br>
+                                       — SCREEN —
+                                       5.5″ – 720×1280 pixels
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$115 </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia 2.1" data-price="115" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Clear_nokia3_web_v2(5).jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                       <h3><a href="#">   Nokia3 </a></h3>
+                                       <p align="justify">
+                                    
+                                          Dimensions	143.4 x 71.4 x 8.5 mm (5.65 x 2.81 x 0.33 in)<br>
+                                          DISPLAY<br>
+                                          Type	IPS LCD capacitive touchscreen, 16M colors<br>
+                                          Size	5.0 inches (~67.3% screen-to-body ratio)<br>
+                                          Resolution	720 x 1280 pixels (~294 ppi pixel density)<br>
+                                          PLATFORM<br>
+                                          OS	Android 7.0 (Nougat)<br>
+                                          Chipset	Mediatek MT6737<br>
+                                          CPU	Quad-core 1.4 GHz Cortex-A53<br>
+                                          GPU	Mali-T720MP1
+                                       
+                                       
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$109  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia3" data-price="109" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/Clear_Nokia2_web(6).jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#"> Nokia 2</a></h3>
+                                    <p align="justify">
+                                       Dimensions	143.5 x 71.3 x 9.3 mm (5.65 x 2.81 x 0.37 in)
+                                       Weight	161 g (5.68 oz)
+                                       Build	Glass front (Gorilla Glass 3), plastic back, aluminum frame
+                                       SIM	Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)
+                                       DISPLAY<br>
+                                       Resolution	720 x 1280 pixels, 16:9 ratio (~294 ppi density)<br>
+                                       PLATFORM<br>
+                                       OS	Android 7.1.1 (Nougat), upgradable to Android 8.1 (Oreo)
+                                       Chipset	Qualcomm MSM8909v2 Snapdragon 212 (28 nm)
+                                       CPU	Quad-core 1.3 GHz Cortex-A7
+                                       GPU	Adreno 304                                      
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$89  </h4>
+                                       <span>(4.4)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia2" data-price="89" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="featured-item">
+                                  <div class="featured-item-img" >
+                                    <a href="#">
+                                       <img src="Images/Nokia/NA_Nokia-5710.jpg" alt="Images">
+                                    </a>
+                                 </div>
+                                 <div class="content">
+                                    <h3><a href="#">Nokia 5710 Express Audio SIM2</a></h3>
+                                    <p align="justify"><br>
+                                       Dimensions	138.9 x 57.7 x 16.2 mm (5.47 x 2.27 x 0.64 in)<br>
+                                       Weight	129.1 g (4.55 oz)<br>
+                                       SIM	Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)
+                                       
+                                       DISPLAY<br>
+                                       Type	TFT LCD<br>
+                                       Size	2.4 inches, 17.8 cm2 (~22.3% screen-to-body ratio)
+                                       Resolution	240 x 320 pixels, 4:3 ratio (~167 ppi density)<br>
+                                       PLATFORM<br>
+                                       Chipset	Unisoc T107 (22 nm)<br>
+                                       CPU	1.0 GHz Cortex-A7
+                     
+                                    </p>
+                                    <hr>
+                                    <div class="content-in">
+                                       <h4>$73 </h4>
+                                       <span>(4.2)<i class="fa fa-star"></i></span>
+                                    </div>
+                                    <hr>                                                  
+                                    <div class="featured-content-list">
+                                       <button type="button" data-name="Nokia5710" data-price="73" class="default-btn border-radius-5">Add to cart</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Modal Total Price -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="show-cart table">
+        
+                  </table>
+                  <div class="grand-total">Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!-- Link jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+   <!-- Link Javascrip -->
+   <script src="script.js"></script>
+
+
+</body>
+
+</html>
